@@ -1,0 +1,59 @@
+U ovom zadatku praviti cemo Book Finder aplikaciju. Aplikacija ima za cilj pretragu i prikaz razlicitih knjiga.
+
+U prilogu imate kako sve treba izgledati na kraju.
+
+Implementirati slijedece:
+
+1. Prikazati sve knjige u tabeli
+- U `script.js` primjetiti cete niz `books`.Svaki clan niza predstavlja odredjenu knjigu
+- U `index.html` primjetiti cete tabelu. Sve knjige iz niza ucitati u tabelu sa odgovarajucim podacima.
+
+2. Pretraga po naslovu knjige
+- U `index.html` primjetiti cete input sa id-em `search`
+- Promjenom ovog polja treba se filtrira lista knjiga po naslovu knjige
+- Pri tome podrzati da ako sve bude uneseno malim ili velikim slovima, pretraga idalje radi
+- Takodjer naslov se ne mora automatski poklapaju. Npr ako korisnik unese rijec `harry` treba da se prikazu sve knjige koje posjeduju tu rijec u svom naslovu.
+- Ako korisnik nista ne unese u ovo polje, treba da se prikazu sve knjige
+
+3. Filtriranje po autoru knjige
+- U `index.html` primjetiti cete select kontrolu sa id-em `authorSelect`
+- Iz niza knjiga pokupiti sve autore i ucitati ih u select listu. Pri tome paziti da se ime jednog autora ne ponavlja dva puta.
+- Nakon sto korisnik odabere nekog autora iz select-a, prikazati samo one knjige ciji je autor jednak odabranom
+- Ako korisnik odabere `All authors` option, treba da se ucitaju sve knjige u listu.
+- Ako korisnik odabere neku od opcija iz selecta, polje sa id-em `search` treba setovati da bude prazno. Takodjer obratno, ako korisnik unese nesto u search polje, selektirana vrijednost treba da bude `All authors`. Dakle jedan filter iskljucuje drugi.
+
+Za dodatnu vjezbu:
+- Kao dodatno za ovaj zadatak mozete implementirati pohranu podataka o knjigama kroz local storage, tako da i kada se app refresha - ostanu svi podaci.
+- Implementirati dodavanje i edit knjiga
+- Implementirati dva filtera da rade u kombinaciji (sve knjige tog i tog autora koje u svom nazivu sadrze to i to)
+
+//English translation
+
+In this task, we will create a Book Finder application. The application aims to search and display different books.
+
+Attached is how everything should look at the end.
+
+Implement the following:
+
+1. Display all books in a table
+- In `script.js` you will notice a series of `books`. Each member of the series represents a specific book
+- In `index.html` you will notice a table. Load all the books from the series into the table with the appropriate data.
+
+2. Search by book title
+- In `index.html` you will notice an input with the id `search`
+- By changing this field, the list of books should be filtered by book title
+- At the same time, support that if everything is entered in lower or uppercase letters, the search still works
+- Also the title doesn't have to match automatically. For example, if the user enters the word `harry', all books that have that word in their title should be displayed.
+- If the user does not enter anything in this field, all books should be displayed
+
+3. Filtering by book author
+- In `index.html` you will notice a select control with the id `authorSelect`
+- Pick up all the authors from a series of books and load them into the select list. In doing so, make sure that the name of one author is not repeated twice.
+- After the user selects an author from select, display only those books whose author is the same as the selected one
+- If the user selects `All authors` option, all books in the list should be loaded.
+- If the user selects one of the options from the select, the field with the id `search' should be set to be empty. Also vice versa, if the user enters something in the search field, the selected value should be ``All authors''. So one filter excludes the other.
+
+For extra practice:
+- In addition to this task, you can implement the storage of book data through local storage, so that even when the app is refreshed - all data remains.
+- Implement adding and editing books
+- Implement two filters to work in combination (all books by such and such author that contain this and that in their title)
